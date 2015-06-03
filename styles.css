@@ -1,0 +1,12 @@
+p {
+	font-size: 500%;
+	/*background-color: pink;*/
+}
+
+#ruleText {
+	display: inline;
+}
+
+#explanation {
+	display: inline;
+}
