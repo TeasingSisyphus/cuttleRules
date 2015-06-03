@@ -1,12 +1,26 @@
 p {
-	font-size: 500%;
+	font-size: 100%;
 	/*background-color: pink;*/
 }
 
-#ruleText {
+div {
+	font-size: 100%
 	display: inline;
 }
 
-#explanation {
+
+#ruleText {
+	width: 60%
+	float: left;
 	display: inline;
+	/*background-color: blue;*/
+}
+
+#explanation {
+	/*float: right;*/
+	display: inline;
+}
+
+.clickable {
+	color: blue;
 }
