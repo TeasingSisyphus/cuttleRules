@@ -5,20 +5,21 @@ p {
 
 div {
 	font-size: 100%
-	display: inline;
+	box-sizing: border-box;
 }
 
 
 #ruleText {
-	width: 60%
+	width: 50%;
 	float: left;
 	display: inline;
 	/*background-color: blue;*/
 }
 
 #explanation {
-	/*float: right;*/
-	display: inline;
+	float: left;
+	width: 50%;
+
 }
 
 .clickable {
