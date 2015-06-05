@@ -11,13 +11,31 @@
 		"The One-Off effects of Aces and Sixes are global; they indiscrimenently destroy cards an all sides of the field. Queens only protect against unique effects applied to a SINGLE card (targetting)",
 		"This effect can only be used on your turn. Notably, it cannot be used to destroy point cards. It can destroy any face card, or a glasses eight",
 		"This can be used to prevent an opponent's one-off effect from happening on their turn. You would then take your own turn."
-		]
+		];
+
+		this.img = 'word-ace-card-back.jpg';
+
+
 
 		this.chooseRule = function(index) {
 			if ($scope.rules.index === index) {
+				$scope.rules.img = 'word-ace-card-back.jpg';
 				$scope.rules.index = null;
+
 			} else {
 				$scope.rules.index = index;
+
+				console.log(index);
+				switch(index) {
+					case 0:
+					case 1:
+						$scope.rules.img = 'card_3_12.png';
+						break;
+					case 2:
+						console.log("index is 2");
+						$scope.rules.img = 'card_3_2.png';
+						break;
+				}
 			}
 			//$scope.$apply();
 		}
