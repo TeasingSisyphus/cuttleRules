@@ -44,11 +44,14 @@
 		<div id='explanation'>
 			<div class='tab' ng-click='tab = 1'>Reason</div>
 			<div class='tab' ng-click='tab = 2'>Discussion</div>
-			<div ng-show='tab === 1' class='pannel' id='explanationPannel'>
+
+
+			
+			<div ng-show='tab === 1' class='panel' id='explanationPanel'>
 				Reason:
 				{{rules.explanations[rules.index]}}
 			</div>
-			<div ng-show='tab ===2' class='pannel' id='disscussionPannel'>Discussion:</div>
+			<div ng-show='tab ===2' class='panel' id='disscussionPanel'>Discussion:</div>
 
 		</div>
 	</div>
